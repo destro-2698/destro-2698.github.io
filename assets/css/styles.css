@@ -527,7 +527,7 @@ ul {
   background-position: center center; }
 
 .home-2-img {
-  background-image: url(../images/home-bg-img.jpg); }
+  background-image: url(../images/9.jpg); }
 
 .featured-img-one {
   background-image: url(../images/home-bg-img.jpg); }
@@ -539,10 +539,10 @@ ul {
   background-image: url(../images/8.jpg); }
 
 .map-image-footer {
-  background-image: url(../images/kgp\ journey\ 1.jpg); }
+  background-image: url(../images/contact\ us\ 3.jpg); }
 
 .map-image-journey {
-  background-image: url(../images/kgp\ journey\ 5.jpg); }
+  background-image: url(../images/kgp\ journey\ 6.jpg); }
 
 .mt-30 {
   margin-top: 30px; }
@@ -636,7 +636,7 @@ button {
 .white-vertion .img-color-overlay {
   background-color: rgba(255, 255, 255, 0.9); }
 .white-vertion .dark-bg {
-  background-color: #fff; }
+  background-color: rgba(255, 255, 255, 0.473); }
 .white-vertion .mh-home .mh-header-info .mh-promo span {
   color: #fff; }
 .white-vertion .mh-project-gallery .grid-item figure figcaption a {
