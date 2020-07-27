@@ -1137,8 +1137,21 @@
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
+            .then(response => {
+                swal({
+                    title: "Thank you!",
+                    text: "Your suggestion was recorded.",
+                    icon: "success",
+                });
+                
+                form.reset();
+            })
+            .catch(error => {
+                swal({
+                    test: "Sorry, there was an error! Could you please try again?",
+                    icon: "error"
+                })
+            })
         })
       </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -1171,6 +1184,8 @@
     <!-- Custom Scripts-->
     <script src="assets/js/map-init.js"></script>
     <script src="assets/js/custom-scripts.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
 
     <!-- ****************
