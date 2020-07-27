@@ -214,7 +214,7 @@
                         </ul>
                         <div class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                             <fieldset>
-                                <form id="frmContact" class="single-form quate-form wow fadeInUp" data-toggle="validator" method="post" action="suggestions.php">
+                                <form id="frmContact" class="single-form quate-form wow fadeInUp" data-toggle="validator" method="post" name = "submit-to-google-sheet">
                                     <div id="msgSubmit" class="h3 text-center hidden"></div>
                                     <div class="row" style="padding-left:20px; width:100%">
                                         <div class="col-md-6 col-sm-12">
@@ -1130,7 +1130,17 @@
     * JS Files *
     ==============
     -->
-    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbya4FNai19wTZSwcO1kC9MyJpCdM3ErEff5rXzxh8F4mvNbpV4T/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
     <!-- jQuery -->
