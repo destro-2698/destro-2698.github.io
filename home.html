@@ -9,7 +9,8 @@
         <meta name="keywords" content="IIT KGP, VP, Avi, LBS" />
         <meta name="developer" content="Web Team">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
         <!-- FAV AND ICONS   -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
         <link rel="shortcut icon" href="assets/images/apple-icon.png">
@@ -147,77 +148,6 @@
                 </div>
             </div>
         </section>   
-        
-        <!--
-        ===================
-            GREIVANCES
-        ===================
-        -->
-        <div class="mh-footer">
-            <div>
-                <div class="container">
-                    <div class="row section-separator">
-                        <div class="col-md-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                            <h3>Your Suggestions</h3>
-                        </div>
-                        <ul class="work-responsibility">
-                            <div style="text-align:justify; padding-left:20px; padding-right: 20px;">
-                            <li>
-                                We are facing a global crisis unlike any in the 69-year history of IIT Kharagpur. I hope that you and your family are safe in the current pandemic. Firstly, from this platform, I want to thank all our frontline workers who ensured the delivery of essential services to the fraternity of IIT Kharagpur during these times.
-                            </li>
-                            <li>
-                                The pressure can seem daunting and figuring out how to restart in this uncertain situation, if anything, even harder. In the present scenario, I intend to utilize this portal to listen to all your problems, note valuable suggestions, and answer your queries.  Please feel free to reach out to me either directly or using the below form. I shall respond at the earliest.
-                            </li>
-                            </div>
-                        </ul>
-                        <div class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
-                            <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator">
-                                <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                <div class="row" style="padding-left:20px; padding-right: 20px;">
-                                    <div class="col-md-6 col-sm-12">
-                                        <input name="name" class="contact-name form-control" id="name" type="text" placeholder="First Name" required>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
-                                        <input name="name" class="contact-subject form-control" id="email" type="email" placeholder="Your Email" required>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <textarea class="contact-message" id="message" rows="6" placeholder="Your Message" required></textarea>
-                                    </div>
-                                    <!-- Subject Button -->
-                                    <div class="btn-form col-sm-12">
-                                        <button type="submit" class="btn btn-fill btn-block" id="form-submit">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <!--
-                        <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
-                            <div class="mh-map">
-                                <div id="mh-map" class="shadow-1"></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="text-left text-xs-center">
-                                        <p><a href="templateshub.net">Templates Hub</a></p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <ul class="social-icon">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-github"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        -->
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!--
         ==================
@@ -259,6 +189,82 @@
             </div>
         </section>
         
+
+        <!--
+        ===================
+            GREIVANCES
+        ===================
+        -->
+        <div class="mh-footer">
+            <div>
+                <div class="container">
+                    <div class="row section-separator">
+                        <div class="col-md-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                            <h3>Your Suggestions</h3>
+                        </div>
+                        <ul class="work-responsibility">
+                            <div style="text-align:justify; padding-left:20px; padding-right: 20px;">
+                            <li>
+                                We are facing a global crisis unlike any in the 69-year history of IIT Kharagpur. I hope that you and your family are safe in the current pandemic. Firstly, from this platform, I want to thank all our frontline workers who ensured the delivery of essential services to the fraternity of IIT Kharagpur during these times.
+                            </li>
+                            <li>
+                                The pressure can seem daunting and figuring out how to restart in this uncertain situation, if anything, even harder. In the present scenario, I intend to utilize this portal to listen to all your problems, note valuable suggestions, and answer your queries.  Please feel free to reach out to me either directly or using the below form. I shall respond at the earliest.
+                            </li>
+                            </div>
+                        </ul>
+                        <div class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <fieldset>
+                                <form id="frmContact" class="single-form quate-form wow fadeInUp" data-toggle="validator" method="post" action="suggestions.php">
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="row" style="padding-left:20px; width:100%">
+                                        <div class="col-md-6 col-sm-12">
+                                            <input name="txtName" class="contact-name form-control" id="txtName" type="text" placeholder="First Name" required>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <input name="txtEmail" class="contact-subject form-control" id="txtEmail" type="email" placeholder="Your Email" required>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <textarea class="contact-message" name="txtMessage" id="txtMessage" rows="6" placeholder="Your Message" required></textarea>
+                                        </div>
+                                        <!-- Subject Button -->
+                                        <div class="btn-form col-sm-12">
+                                            <button type="submit" class="btn btn-fill btn-block" name="Submit" id="Submit" value="Submit">Send Message</button>
+    
+                                        </div>
+                                    </div>
+                                </form>
+                                </fieldset>
+                        </div>
+                        <!--
+                        <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                            <div class="mh-map">
+                                <div id="mh-map" class="shadow-1"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="text-left text-xs-center">
+                                        <p><a href="templateshub.net">Templates Hub</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="social-icon">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!--
         ===================
            SERVICE(Commenting out this section)
